@@ -225,9 +225,9 @@
 
     // 限定相机范围参数
     const CAMERA_LIMITS = {
-      minX: -1, maxX: 1,
-      minY: -1, maxY: 1,
-      minZ: -1, maxZ: 1
+      minX: -0.05, maxX: 0.05,
+      minY: -0.05, maxY: 0.05,
+      minZ: -0.05, maxZ: 0.05
     };
 
     // 添加 SparkControls（用于键鼠控制）
@@ -235,6 +235,7 @@
   
     // ✅ 加载蝴蝶模型
     const splat = new SplatMesh({ url: "https://huggingface.co/chenttt/matrix3d/resolve/main/point_cloud.ply" });
+    
     splat.scale.y = -1;
     scene.add(splat);
     // 让 splat 模型持续自转
