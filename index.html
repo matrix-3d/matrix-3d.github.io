@@ -51,7 +51,7 @@
 
   "></div>
 
-  <section class="hero">
+  <section class="hero" style="background-color: #ededed; padding: 0;"></section>
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
@@ -60,18 +60,34 @@
             <h1 class="title is-1 publication-title" style="color: #000">Matrix-3D: Omnidirectional Explorable 3D World Generation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block" style="color: #000"><a href="https://chenziwe.com/" target="_blank">XXX</a><sup>1</sup>,</span>
-
+              <span class="author-block" style="color: #000">Zhongqi Yang</a><sup>1*</sup>,</span>
+              <span class="author-block" style="color: #000"> Wenhang Ge</a><sup>2*</sup>,</span>
+              <span class="author-block" style="color: #000"> Yuqi Li</a><sup>1,3*</sup>,</span>
+              <span class="author-block" style="color: #000"> Jiaqi Chen</a><sup>1†</sup>,</span>
+              <span class="author-block" style="color: #000"> Haoyuan Li</a><sup>1†</sup>,</span>
+              <span class="author-block" style="color: #000"> Mengyin An</a><sup>1</sup>,</span>
+              <span class="author-block" style="color: #000"> Fei Kang</a><sup>1</sup>,</span>
+              <span class="author-block" style="color: #000"> Hua Xue</a><sup>1</sup>,</span>
+              <span class="author-block" style="color: #000"> Baixin Xu</a><sup>1</sup>,</span>
+              <span class="author-block" style="color: #000"> Yuyang Yin</a><sup>1</sup>,</span>
+              <span class="author-block" style="color: #000"> Eric Li</a><sup>1</sup>,</span>
+              <span class="author-block" style="color: #000"> Yang Liu</a><sup>1</sup>,</span>
+              <span class="author-block" style="color: #000"> Yikai Wang</a><sup>4</sup>,</span>
+              <span class="author-block" style="color: #000"> Hao-Xiang Guo</a><sup>1‡</sup>,</span>
+              <span class="author-block" style="color: #000"> Yahui Zhou</a><sup>1</sup></span>
             </div>
             <div class="is-size-5 publication-authors">
                 <span class="eql-cntrb" style="color: #000"><br><sup>1</sup><i>Skywork AI</i></span>
+                <span class="eql-cntrb" style="color: #000"><br><sup>2</sup><i>Hong Kong University of Science and Technology (Guangzhou)</i></span>
+                <span class="eql-cntrb" style="color: #000"><br><sup>3</sup><i>Institute of Computing Technology, Chinese Academy of Sciences</i></span>
+                <span class="eql-cntrb" style="color: #000"><br><sup>4</sup><i>School of Artificial Intelligence, Beijing Normal University</i></span>
               <!-- <span class="eql-cntrb" style="color: #FFF"><sup>2</sup>Adobe Research</span> -->
             </div>
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2410.12781" target="_blank"
+                  <a href="https://github.com/SkyworkAI/Matrix-3D/asset/report.pdf" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -80,7 +96,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/arthurhero/Long-LRM" target="_blank"
+                  <a href="https://github.com/SkyworkAI/Matrix-3D" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -90,6 +106,13 @@
                 </span>
               </div>
             </div>
+            
+            <div style="border-top: 1px solid #000; padding-top: 8px; margin-top: 12px; font-size: 14px;">
+              <div><sup>*</sup>These three authors contributed equally to this work.</div>
+              <div><sup>†</sup>These two authors contributed equally to this work.</div>
+              <div><sup>‡</sup>Corresponding author and project lead.</div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -100,16 +123,9 @@
 <!-- End paper abstract -->
 
 
-<section class="hero teaser is-light">
-  <div class="container is-max-desktop">
-    <br>
-  </div>
-  <h2 class="container is-centered title is-2" >Explorable 3D World</h2>
-  <div class="container is-centered" id="viewer-container" style="width: 1500px; height: 480px; border-radius: 12px; overflow: hidden;background-color: #FFFFFF;"></div>
-  <br>
-</section>
+
 <!-- Teaser video-->
-<section class="hero teaser" style="background-color: #FFFFFF;">
+<!-- <section class="hero teaser" style="background-color: #FFFFFF;">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <br><br>
@@ -121,9 +137,9 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- Paper abstract -->
-<section class="section hero is-light" style="background-color: #ededed;">
+<section class="section hero is-light" style="background-color: #FFFFFF;">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -133,7 +149,7 @@
         
         <div class="content has-text-justified">
           <p>
-              <!-- Explorable 3D world generation from a single image or text prompt forms a cornerstone of spatial intelligence. 
+              Explorable 3D world generation from a single image or text prompt forms a cornerstone of spatial intelligence. 
               Recent works utilize video model to achieve wide-scope and generalizable 3D world generation.  However, existing approaches often suffer from limited reconstruction scope and suboptimal visual quality. 
               In this work, we propose <b>Matrix-3D</b>, a framework that utilize panoramic representation for wide-coverage omnidirectional explorable 3D world generation that combines conditional video generation and panoramic 3D reconstruction.
               We first train a trajectory-guided panoramic video diffusion model that employs scene mesh renders as condition, to enable high-quality and geometrically consistent scene video generation.
@@ -142,14 +158,14 @@
               For efficiency, we introduce a feed-forward panoramic 3D reconstruction model that projects video latents and camera poses to predict omni-directional 3D Gaussian Splatting attributes. To facilitate convergence, we adopt a two-stage training strategy and supervise the model using rendered panoramic novel views. For effectiveness, we also propose a optimization-based reconstruction method.
               However, no existing panoramic video dataset provides associated camera poses. 
               To facilitate effective training, we also introduce the <b>Matrix-Pano</b> dataset — the first large-scale synthetic collection comprising 116,759 high-quality static panoramic video sequences with various annotations.
-              Extensive experiments demonstrate the effectiveness of our proposed framework, which achieves state-of-the-art performance in panoramic video generation and 3D world generation. -->
+              Extensive experiments demonstrate the effectiveness of our proposed framework, which achieves state-of-the-art performance in panoramic video generation and 3D world generation.
           </p>
         </div>
       </div>
     </div>
   </div>
   <br>
-  <img class="container is-centered" src="static/images/bg-method.png" style="max-width:800px; margin-bottom: 20px;">
+  <img class="container is-centered" src="static/images/teaser.png" style="max-width:800px; margin-bottom: 20px;">
 </section>
 
 
@@ -173,98 +189,7 @@
   </div>
   <br>
 </section>
-
-<head>
-  <meta charset="UTF-8" />
-  <title>Butterfly Viewer - SparkControls</title>
-
-
-  <!-- 模块导入 -->
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.174.0/three.module.js",
-      "@sparkjsdev/spark": "https://sparkjs.dev/releases/spark/0.1.3/spark.module.js"
-    }
-  }
-  </script>
-</head>
-<body>
-  <div id="viewer-container"></div>
-
-  <script type="module">
-    import * as THREE from "three";
-    import {
-      SparkRenderer,
-      SplatMesh,
-      SparkControls
-    } from "@sparkjsdev/spark";
-
-    // 容器与尺寸
-    const container = document.getElementById("viewer-container");
-    const width = container.clientWidth;
-    const height = container.clientHeight;
-
-    // Three.js 基本设置
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(width, height);
-    container.appendChild(renderer.domElement);
-
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-    camera.position.set(0, 0, 0);
-    scene.add(camera);
-
-    // Spark 渲染器
-    const spark = new SparkRenderer({ renderer });
-    scene.add(spark);
-    spark.newViewpoint({ camera, autoUpdate: true });
-
-    // 限定相机范围参数
-    const CAMERA_LIMITS = {
-      minX: -0.05, maxX: 0.05,
-      minY: -0.05, maxY: 0.05,
-      minZ: -0.05, maxZ: 0.05
-    };
-
-    // 添加 SparkControls（用于键鼠控制）
-    const controls = new SparkControls({ canvas: renderer.domElement });
-  
-    // ✅ 加载蝴蝶模型
-    const splat = new SplatMesh({ url: "https://huggingface.co/chenttt/matrix3d/resolve/main/point_cloud.ply" });
-    
-    splat.scale.y = -1;
-    scene.add(splat);
-    // 让 splat 模型持续自转
-    function animateSplatRotation() {
-      if (splat) {
-      splat.rotation.y += 0.01;
-      }
-      requestAnimationFrame(animateSplatRotation);
-    }
-    animateSplatRotation();
-    // 渲染循环
-    renderer.setAnimationLoop(() => {
-      // 限定相机位置
-      camera.position.x = Math.max(CAMERA_LIMITS.minX, Math.min(CAMERA_LIMITS.maxX, camera.position.x));
-      camera.position.y = Math.max(CAMERA_LIMITS.minY, Math.min(CAMERA_LIMITS.maxY, camera.position.y));
-      camera.position.z = Math.max(CAMERA_LIMITS.minZ, Math.min(CAMERA_LIMITS.maxZ, camera.position.z));
-
-      renderer.render(scene, camera);
-      controls.update(camera);
-    });
-
-    // 监听窗口缩放
-    window.addEventListener("resize", () => {
-      const w = container.clientWidth;
-      const h = container.clientHeight;
-      renderer.setSize(w, h);
-      camera.aspect = w / h;
-      camera.updateProjectionMatrix();
-    });
-  </script>
-</body>
-
+<!-- 
 <!-- End teaser video -->
 
 
@@ -315,25 +240,295 @@
     </div>
   </div>
 </section>
+<!-- Geometry & Color Consistency Samples -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-centered" style="text-align:center;">
+      <h2 class="title is-3">Geometry & Color Consistency</h2>
+      <!-- Sample Block Start -->
+      <div style="display:inline-block; margin: 10px; width: 800px;">
+        <div style="display: flex; justify-content: center; gap: 10px;">
+          <!-- Input panoramic video -->
+          <div style="height: 300px;">
+            <div style="text-align:center; font-size:18px; margin-bottom:4px;">Panoramic Video</div>
+            <video controls muted loop height="300" style="display:block; margin:0 auto;">
+              <source src="static/video/52_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Rendered 3DGS video -->
+          <div style="height: 300px;">
+            <div style="text-align:center; font-size:18px; margin-bottom:4px;">3D Scene</div>
+            <video controls muted loop height="300" style="display:block; margin:0 auto;">
+              <source src="static/video/52_11_resize.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div style="text-align: center; font-size: 16px; margin-top: 0px;">
+          A floating city in the sky, with airships, glowing towers, and a central fountain that sprays liquid light.
+        </div>
+      </div>
+      <div style="display:inline-block; margin: 10px; width: 800px;">
+        <div style="display: flex; justify-content: center; gap: 20px;">
+          <div style="height: 300px;">
+            <div style="text-align:center; font-size:18px; margin-bottom:4px;">Panoramic Video</div>
+            <video controls muted loop height="300" style="display:block; margin:0 auto;">
+              <source src="static/video/52_2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="height: 300px;">
+            <div style="text-align:center; font-size:18px; margin-bottom:4px;">3D Scene</div>
+            <video controls muted loop height="300" style="display:block; margin:0 auto;">
+              <source src="static/video/52_22_resize.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div style="text-align: center; font-size: 16px; margin-top: 6px;">
+          Enchanted forest with glowing mushrooms, bioluminescent plants, and a crystal-clear stream, magical and serene.
+        </div>
+      </div>
 
-
-<!-- Youtube video -->
-<section class="hero teaser is-light">
-  <div class="container is-max-desktop">
-    <br>
-    <div class="hero-body is-centered has-text-centered">
-      <h2 class="title is-2">Result</h2>
-      <!-- <img src="static/images/logo.jpeg" alt="Matrix-3D Logo" style="width: 200px; height: 125px; vertical-align: middle; margin-bottom: 20px;"> -->
-      <!-- <span style="display: inline-block; vertical-align: middle; margin-left: 16px; font-size: 1.3rem; color: #333;">
-        Matrix-3D: Omnidirectional Explorable 3D World Generation
-      </span> -->
-    </div>      
+      <div style="display:inline-block; margin: 10px; width: 800px;">
+        <div style="display: flex; justify-content: center; gap: 20px;">
+          <div style="height: 300px;">
+            <div style="text-align:center; font-size:18px; margin-bottom:4px;">Panoramic Video</div>
+            <video controls muted loop height="300" style="display:block; margin:0 auto;">
+              <source src="static/video/52_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="height: 300px;">
+            <div style="text-align:center; font-size:18px; margin-bottom:4px;">3D Scene</div>
+            <video controls muted loop height="300" style="display:block; margin:0 auto;">
+              <source src="static/video/52_33_resize.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div style="text-align: center; font-size: 16px; margin-top: 6px;">
+          A floating island with a waterfall, a small cottage, and a sky filled with stars and planets, anime style, vibrant colors.
+        </div>
+      </div>
+      <!-- Add more blocks as needed -->
+    </div>
   </div>
-  <br>
+</section>
+<section class="hero is-small is-centered is-max-desktop">
+  <div class="hero-body">
+    <div class="container" style="text-align:center;">
+      <h2 class="title is-4" style="text-align: center;">Fine-Grained Control</h2>
+      <h3 style="text-align: center; font-size: 16px; margin-bottom: 20px;">
+        Generate different 3D scenes based on different user-specified camera trajectories. Each row shows an input panorama (top) and the rendered 3D scene video (bottom), corresponding to different camera paths.
+      </h3>
+      <div style="display: flex; justify-content: center;">
+        <table class="table fine-control-table" style="text-align:center; margin: 0 auto;">
+          <thead>
+            <tr>
+              <th>Input Image</th>
+              <th>Z-curve Trajectory</th>
+              <th>Straight Trajectory</th>
+              <th>Diagonal Right-Front</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1: First Image Set -->
+            <tr>
+              <td></td>
+              <td><img src="static/img/53_12.png" width="480"></td>
+              <td><img src="static/img/53_13.png" width="480"></td>
+              <td><img src="static/img/53_14.png" width="480"></td>
+            </tr>
+            <tr>
+              <td><img src="static/img/53_21.png" width="480"></td>
+              <td><video class="autoplay-group" controls muted loop width="480"><source src="static/video/53_22.mp4" type="video/mp4"></video></td>
+              <td><video class="autoplay-group" controls muted loop width="480"><source src="static/video/53_23.mp4" type="video/mp4"></video></td>
+              <td><video class="autoplay-group" controls muted loop width="480"><source src="static/video/53_24.mp4" type="video/mp4"></video></td>
+            </tr>
+            <tr>
+              <td><img src="static/img/53_31.png" width="480"></td>
+              <td><video class="autoplay-group" controls muted loop width="480"><source src="static/video/53_32.mp4" type="video/mp4"></video></td>
+              <td><video class="autoplay-group" controls muted loop width="480"><source src="static/video/53_33.mp4" type="video/mp4"></video></td>
+              <td><video class="autoplay-group" controls muted loop width="480"><source src="static/video/53_34.mp4" type="video/mp4"></video></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  // 自动播放所有 .autoplay-group 视频
+  window.addEventListener('DOMContentLoaded', function() {
+    const videos = document.querySelectorAll('.autoplay-group');
+    videos.forEach(video => {
+      video.play().catch(() => {});
+    });
+  });
+</script>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-centered" style="text-align:center;">
+      <h2 class="title is-4" style="text-align: center;">Large-Scale Movement</h2>
+      <p style="text-align: center; font-size: 16px; margin-bottom: 20px;">
+        Input image/text on the left; WorldLabs motion result in the middle; Matrix-3D motion with 3DGS rendering result on the right.
+      </p>
+
+      <table class="table is-fullwidth" style="text-align:center; vertical-align: middle; background: none; border: none;">
+        <thead>
+          <tr style="vertical-align: middle;">
+            <th style="vertical-align: middle;">Input Image</th>
+            <th style="vertical-align: middle;">WorldLabs</th>
+            <th style="vertical-align: middle;">Matrix-3D</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Sample Row 1 -->
+          <tr>
+            <td style="width: 33%;">
+              <img src="static/img/54_11.png" style="height:360px; object-fit:cover;">
+            </td>
+            <td style="width: 33%;">
+              <video class="autoplay-group" controls muted loop style="height:360px; object-fit:cover;">
+                <source src="static/video/54_12_resize.mp4" type="video/mp4">
+              </video>
+            </td>
+            <td style="width: 33%;">
+              <video class="autoplay-group" controls muted loop style="height:360px; object-fit:cover;">
+                <source src="static/video/54_13.mp4" type="video/mp4">
+              </video>
+            </td>
+          </tr>
+
+          <!-- Sample Row 2 -->
+          <tr>
+            <td>
+              <img src="static/img/54_21.png" style="height:360px; object-fit:cover;">
+            </td>
+            <td>
+              <video class="autoplay-group" controls muted loop style="height:360px; object-fit:cover;">
+                <source src="static/video/54_22_resize.mp4" type="video/mp4">
+              </video>
+            </td>
+            <td>
+              <video class="autoplay-group" controls muted loop style="height:360px; object-fit:cover;">
+                <source src="static/video/54_23.mp4" type="video/mp4">
+              </video>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </section>
 
-<!-- End youtube video -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-4" style="text-align: center;">Endless Exploration</h2>
+      <p style="text-align: left;">3D worlds generated by Matrix-3D allow exploration in any direction,
+        facilitating the development of an endless exploration strategy. Given an
+        input image and an initial trajectory path, users can generate the first segment of the 3D scene.
+        Subsequently, users can look around, change direction, and continue exploration along a second
+        trajectory. This approach enables endless exploration, allowing users to freely navigate the 3D scene
+        in any direction.</p>
+    </div>
+    <div class="container"></div>
+      <table class="table is-fullwidth" style="text-align:center; vertical-align: middle; background: none; border: none;">
+        <thead>
+          <tr style="vertical-align: middle; text-align: center;">
+            <th style="vertical-align: middle; text-align: center;">Input Image </th>
+            <th style="vertical-align: middle; text-align: center;">First Exploration</th>
+            <th style="vertical-align: middle; text-align: center;">Second Exploration</th>
+            <th style="vertical-align: middle; text-align: center;">Final Combined Video</th>
+          </tr>
+        </thead>
+        
+        <tbody>
 
+          <!-- Scene 1 -->
+          <tr>
+            <td><img src="static/img/55_11.png" width="480"><br></td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480"><source src="static/video/55_12.mp4" type="video/mp4"></video><br>
+            </td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480" style="margin-top: 5px;"><source src="static/video/55_13.mp4" type="video/mp4"></video>
+            </td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480"><source src="static/video/55_14.mp4" type="video/mp4"></video><br>
+            </td>
+          </tr>
+
+          <!-- Scene 2 -->
+          <tr>
+            <td><img src="static/img/55_21.png" width="480"><br></td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480"><source src="static/video/55_22.mp4" type="video/mp4"></video><br>
+            </td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480" style="margin-top: 5px;"><source src="static/video/55_23.mp4" type="video/mp4"></video>
+            </td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480"><source src="static/video/55_24.mp4" type="video/mp4"></video><br>
+            </td>
+          </tr>
+
+          <!-- Scene 3 -->
+          <tr>
+            <td><img src="static/img/55_31.png" width="480"><br></td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480"><source src="static/video/55_32.mp4" type="video/mp4"></video><br>
+            </td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480" style="margin-top: 5px;"><source src="static/video/55_33.mp4" type="video/mp4"></video>
+            </td>
+            <td>
+              <video class="autoplay-group" controls muted loop width="480"><source src="static/video/55_34.mp4" type="video/mp4"></video><br>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="text-align: center;">Comparison with state-of-the-art methods</h2>
+    <h2 class="title is-4" style="text-align: center;">
+      Comparison with Camera-Guided Video Generation Model
+    </h2>
+
+    <p style="font-size: 1.1em; margin-bottom: 1em;">
+      Since only Matrix-3D generates
+      panoramic videos, we crop our results into perspective view videos with a 90-degree field of view
+      (FoV) before conducting the evaluation. We assess the generation performance from two key aspects
+      including image quality and camera controllability. Our method outperforms previous approaches
+      regarding visual quality and camera controllability, as evidenced by the quantitative results in the table
+      below. Our approach demonstrates a substantial improvement in camera controllability, enabling more
+      accurate and flexible camera guidance.
+    </p>
+
+    <img src="static/img/table1.png" width="960"><br><br>
+    <h2 class="title is-4" style="text-align: center;">
+      Comparison with 3D World Reconstruction
+    </h2>
+
+    <p style="font-size: 1.1em; margin-bottom: 1em;">
+      To evaluate 3D world generation, we visualize
+      the reference image alongside the rendered panoramic image in the following figure. To mitigate the influence of
+      dataset-provided geometry on reconstruction quality, we re-generate a video sequence from each
+      input panorama using depth estimated by MoGe. The trajectory for each sample is recursively
+      scaled down by a factor of 0.5 until it no longer intersects with the scene mesh. We compare
+      our method against ODGS, a state-of-the-art optimization-based 3DGS approach tailored for
+      panoramic inputs. Our proposed optimization-based pipeline substantially outperforms ODGS in
+      reconstruction quality, while our feed-forward variant enables fast and efficient reconstruction. Slight
+      color inconsistencies in the optimization-based results stem from a super-resolution pre-processing
+      step.
+    </p>
+    <img src="static/img/comparison-3d-world.png" width="960"><br>
+    </div>
+
+  </div>
+</section>
 <!--BibTex citation -->
 
 <section class="section hero is-light" style="background-color: #ededed;">
