@@ -7,7 +7,6 @@
   <meta name="description" content="Matrix-3D: Omnidirectional Explorable 3D World Generation">
   <meta property="og:title" content="Matrix-3D Project Page"/>
   <meta property="og:description" content="Matrix-3D: Omnidirectional Explorable 3D World Generation"/>
-  <meta property="og:url" content="https://arthurhero.github.io/projects/llrm/index.html"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/images/fig2.png" />
   <meta property="og:image:width" content="1200"/>
@@ -104,13 +103,29 @@
                     <span>Code</span>
                   </a>
                 </span>
+                <span class="link-block">
+                  <a href="https://matrix-3d.github.io/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/Skywork/Matrix-3D" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-robot"></i>
+                  </span>
+                  <span>Huggingface</span>
+                  </a>
+                </span>
               </div>
             </div>
             
             <div style="border-top: 1px solid #000; padding-top: 8px; margin-top: 12px; font-size: 14px;">
-              <div><sup>*</sup>These three authors contributed equally to this work.</div>
-              <div><sup>†</sup>These two authors contributed equally to this work.</div>
-              <div><sup>‡</sup>Corresponding author and project lead.</div>
+              <div><sup>*</sup>Equal contribution. <sup>†</sup>Equal contribution. <sup>‡</sup>Corresponding author and project lead.</div>
             </div>
 
           </div>
@@ -123,20 +138,6 @@
 <!-- End paper abstract -->
 
 
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser" style="background-color: #FFFFFF;">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <br><br>
-      <h2 class="subtitle has-text-centered">
-        <a
-          href="viewer/index.html?url=https://huggingface.co/chenttt/matrix3d/resolve/main/point_cloud.ply&w2c=1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0,0,0,0,1">
-          Open interactive viewer
-        </a>
-      </h2>
-    </div>
-  </div>
 </section> -->
 <!-- Paper abstract -->
 <section class="section hero is-light" style="background-color: #FFFFFF;">
@@ -144,6 +145,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <!-- <img src="static/images/logo.jpeg" alt="Matrix-3D Logo" style="max-width:120px; margin-bottom: 20px;"> -->
+  <img class="container is-centered" src="static/images/teaser.png" style="max-width:800px; margin-bottom: 20px;">
 
         <h2 class="title is-3">Abstract</h2>
         
@@ -165,7 +167,6 @@
     </div>
   </div>
   <br>
-  <img class="container is-centered" src="static/images/teaser.png" style="max-width:800px; margin-bottom: 20px;">
 </section>
 
 
@@ -173,7 +174,7 @@
   <div class="container is-max-desktop">
     <br>
     <div class="hero-body is-centered has-text-centered">
-      <h2 class="title is-2">Overview of Matrix-3D</h2>
+      <h2 class="title is-3">Overview of Matrix-3D</h2>
       <!-- <img src="static/images/logo.jpeg" alt="Matrix-3D Logo" style="width: 200px; height: 125px; vertical-align: middle; margin-bottom: 20px;"> -->
       <!-- <span style="display: inline-block; vertical-align: middle; margin-left: 16px; font-size: 1.3rem; color: #333;">
         Matrix-3D: Omnidirectional Explorable 3D World Generation
@@ -207,7 +208,7 @@
       </div>
 
       <!-- Dataset features -->
-      <h3 class="title is-4" style="margin-top:2rem;">Dataset Construction & Features</h3>
+      <h3 class="title is-4" style="margin-top:2rem;">Data Samples</h3>
       <!-- <p>
         <strong>High-Fidelity Simulation & Diverse Environments:</strong><br>
         Matrix-Pano is entirely built in Unreal Engine with highly realistic physics and visual effects. It covers <strong>504 high-quality, large-scale 3D scenes</strong> including both indoor and outdoor environments, supporting diverse weather and lighting conditions. All video sequences are paired with precise camera and trajectory annotations.
@@ -244,10 +245,10 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container is-centered" style="text-align:center;">
-      <h2 class="title is-3">Geometry & Color Consistency</h2>
+      <h2 class="title is-3">Geometric & Textural Consistency</h2>
       <!-- Sample Block Start -->
       <div style="display:inline-block; margin: 10px; width: 800px;">
-        <div style="display: flex; justify-content: center; gap: 10px;">
+        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 0px;">
           <!-- Input panoramic video -->
           <div style="height: 300px;">
             <div style="text-align:center; font-size:18px; margin-bottom:4px;">Panoramic Video</div>
@@ -267,8 +268,9 @@
           A floating city in the sky, with airships, glowing towers, and a central fountain that sprays liquid light.
         </div>
       </div>
+      <br><br><br>
       <div style="display:inline-block; margin: 10px; width: 800px;">
-        <div style="display: flex; justify-content: center; gap: 20px;">
+        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 0px;">
           <div style="height: 300px;">
             <div style="text-align:center; font-size:18px; margin-bottom:4px;">Panoramic Video</div>
             <video class="autoplay-group" controls muted loop height="300" style="display:block; margin:0 auto;">
@@ -286,9 +288,9 @@
           Enchanted forest with glowing mushrooms, bioluminescent plants, and a crystal-clear stream, magical and serene.
         </div>
       </div>
-
+      <br><br><br>
       <div style="display:inline-block; margin: 10px; width: 800px;">
-        <div style="display: flex; justify-content: center; gap: 20px;">
+        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 0px;">
           <div style="height: 300px;">
             <div style="text-align:center; font-size:18px; margin-bottom:4px;">Panoramic Video</div>
             <video  class="autoplay-group" controls muted loop height="300" style="display:block; margin:0 auto;">
@@ -313,7 +315,7 @@
 <section class="hero is-small is-centered is-max-desktop">
   <div class="hero-body">
     <div class="container" style="text-align:center;">
-      <h2 class="title is-4" style="text-align: center;">Fine-Grained Control</h2>
+      <h2 class="title is-3" style="text-align: center;">Fine-Grained Trajectory Control</h2>
       <h3 style="text-align: center; font-size: 16px; margin-bottom: 20px;">
         Generate different 3D scenes based on different user-specified camera trajectories. Each row shows an input panorama (top) and the rendered 3D scene video (bottom), corresponding to different camera paths.
       </h3>
@@ -322,7 +324,7 @@
           <thead>
             <tr>
               <th>Input Image</th>
-              <th>Z-curve Trajectory</th>
+              <th>S-curve Trajectory</th>
               <th>Straight Trajectory</th>
               <th>Diagonal Right-Front</th>
             </tr>
@@ -365,17 +367,17 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-centered" style="text-align:center;">
-      <h2 class="title is-4" style="text-align: center;">Large-Scale Movement</h2>
+      <h2 class="title is-3" style="text-align: center;">Large-Scale Movement</h2>
       <p style="text-align: center; font-size: 16px; margin-bottom: 20px;">
-        Input image/text on the left; WorldLabs motion result in the middle; Matrix-3D motion with 3DGS rendering result on the right.
+        Matrix-3D can generate 3D scenes with greater range than WorldLabs.
       </p>
 
       <table class="table is-fullwidth" style="text-align:center; vertical-align: middle; background: none; border: none;">
         <thead>
           <tr style="vertical-align: middle;">
             <th style="vertical-align: middle;">Input Image</th>
-            <th style="vertical-align: middle;">WorldLabs</th>
-            <th style="vertical-align: middle;">Matrix-3D</th>
+            <th style="vertical-align: middle;">WorldLabs Result</th>
+            <th style="vertical-align: middle;">Matrix-3D Result</th>
           </tr>
         </thead>
         <tbody>
@@ -421,22 +423,20 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-4" style="text-align: center;">Endless Exploration</h2>
+      <h2 class="title is-3" style="text-align: center;">Endless Exploration</h2>
       <p style="text-align: left;">3D worlds generated by Matrix-3D allow exploration in any direction,
         facilitating the development of an endless exploration strategy. Given an
         input image and an initial trajectory path, users can generate the first segment of the 3D scene.
         Subsequently, users can look around, change direction, and continue exploration along a second
         trajectory. This approach enables endless exploration, allowing users to freely navigate the 3D scene
         in any direction.</p>
-    </div>
-    <div class="container"></div>
       <table class="table is-fullwidth" style="text-align:center; vertical-align: middle; background: none; border: none;">
         <thead>
           <tr style="vertical-align: middle; text-align: center;">
             <th style="vertical-align: middle; text-align: center;">Input Image </th>
             <th style="vertical-align: middle; text-align: center;">First Exploration</th>
             <th style="vertical-align: middle; text-align: center;">Second Exploration</th>
-            <th style="vertical-align: middle; text-align: center;">Final Combined Video</th>
+            <th style="vertical-align: middle; text-align: center;">Combined Video</th>
           </tr>
         </thead>
         
@@ -492,32 +492,25 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3" style="text-align: center;">Comparison with state-of-the-art methods</h2>
+    <h2 class="title is-3" style="text-align: center;">Comparison</h2><br>
     <h2 class="title is-4" style="text-align: center;">
-      Comparison with Camera-Guided Video Generation Model
+      Comparison of Panoramic Video Generation and Camera Guided Generation Models
     </h2>
-
-    <p style="font-size: 1.1em; margin-bottom: 1em;">
-      Since only Matrix-3D generates
-      panoramic videos, we crop our results into perspective view videos with a 90-degree field of view
-      (FoV) before conducting the evaluation. We assess the generation performance from two key aspects
-      including image quality and camera controllability. Our method outperforms previous approaches
-      regarding visual quality and camera controllability, as evidenced by the quantitative results in the table
-      below. Our approach demonstrates a substantial improvement in camera controllability, enabling more
-      accurate and flexible camera guidance.
-    </p>
-
     <img src="static/img/table1.png" width="960"><br><br>
+    <p style="font-size: 1.1em; margin-bottom: 1em;">
+      -Compared with SOTA 360-video generation methods, Matrix-3D
+      delivers superior visual quality and plausible geometric structure in the generated panorama videos.<br>
+      - Our method also outperforms previous camera-controlled video generation approaches regarding visual quality and camera controllability.
+    </p>
+    <img src="static/img/qualitative_compare_panorama.png" width="960"><br><br>
+
+    
     <h2 class="title is-4" style="text-align: center;">
       Comparison with 3D World Reconstruction
     </h2>
 
     <p style="font-size: 1.1em; margin-bottom: 1em;">
-      To evaluate 3D world generation, we visualize
-      the reference image alongside the rendered panoramic image in the following figure. To mitigate the influence of
-      dataset-provided geometry on reconstruction quality, we re-generate a video sequence from each
-      input panorama using depth estimated by MoGe. The trajectory for each sample is recursively
-      scaled down by a factor of 0.5 until it no longer intersects with the scene mesh. We compare
+      We compare
       our method against ODGS, a state-of-the-art optimization-based 3DGS approach tailored for
       panoramic inputs. Our proposed optimization-based pipeline substantially outperforms ODGS in
       reconstruction quality, while our feed-forward variant enables fast and efficient reconstruction. Slight
