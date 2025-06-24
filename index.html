@@ -103,28 +103,25 @@
 <section class="hero teaser is-light">
   <div class="container is-max-desktop">
     <br>
-    <!-- <div class="hero-body is-centered has-text-centered"> -->
-      
-      <!-- <img src="static/images/logo.jpeg" alt="Matrix-3D Logo" style="width: 200px; height: 125px; vertical-align: middle; margin-bottom: 20px;"> -->
-      <!-- <span style="display: inline-block; vertical-align: middle; margin-left: 16px; font-size: 1.3rem; color: #333;">
-        Matrix-3D: Omnidirectional Explorable 3D World Generation
-      </span> -->
-      <!-- <div style="backdrop-filter: blur(12px) saturate(160%) brightness(1.1); background: rgba(255,255,255,0.35); border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 24px; display: inline-block;">
-        <img src="static/images/overview.png" width="960" height="425" style="border-radius: 12px;">
-      </div>
-      <br><br>
-      <div class="content has-text-justified">
-        Given trajectory guidance in the form of scene mesh renderings and corresponding masks—obtained by rendering an estimated mesh along a user-defined camera trajectory—we train an image-to-video diffusion model to generate high-quality panoramic videos that precisely follow the specified trajectory. The generated 2D panoramic content is then lifted into an omnidirectional, explorable 3D world using a large-scale panorama reconstruction model.
-      </div> -->
-    <!-- </div> -->
-      <!-- Viewer区域 -->
-      
   </div>
-  <h2 class="container is-centered title is-2">Explorable 3D World</h2>
-  <div class="container is-centered" id="viewer-container" style="width: 1500px; height: 480px; border-radius: 12px; overflow: hidden;"></div>
+  <h2 class="container is-centered title is-2" >Explorable 3D World</h2>
+  <div class="container is-centered" id="viewer-container" style="width: 1500px; height: 480px; border-radius: 12px; overflow: hidden;background-color: #FFFFFF;"></div>
   <br>
 </section>
-
+<!-- Teaser video-->
+<section class="hero teaser" style="background-color: #FFFFFF;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <br><br>
+      <h2 class="subtitle has-text-centered">
+        <a
+          href="viewer/index.html?url=https://huggingface.co/chenttt/matrix3d/resolve/main/point_cloud.ply&w2c=1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0,0,0,0,1">
+          Open interactive viewer
+        </a>
+      </h2>
+    </div>
+  </div>
+</section>
 <!-- Paper abstract -->
 <section class="section hero is-light" style="background-color: #ededed;">
   <div class="container is-max-desktop">
@@ -269,6 +266,7 @@
 </body>
 
 <!-- End teaser video -->
+
 
 
 
