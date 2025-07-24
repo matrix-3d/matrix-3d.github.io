@@ -31,5 +31,5 @@ def resize_video_to_match_height(video2_path, output_path):
     out.release()
 
 # 示例用法
-resize_video_to_match_height('/Users/jiaqichen/Documents/YS-IMTech.github.io/arthurhero.github.io/projects/llrm/static/video/52_3.mp4', 
-                             '/Users/jiaqichen/Documents/YS-IMTech.github.io/arthurhero.github.io/projects/llrm/static/video/52_3_resize.mp4')
+resize_video_to_match_height('/Users/jiaqichen/Documents/YS-IMTech.github.io/arthurhero.github.io/projects/llrm/static/video/52_4.mp4', 
+                             '/Users/jiaqichen/Documents/YS-IMTech.github.io/arthurhero.github.io/projects/llrm/static/video/52_4_resize.mp4')
